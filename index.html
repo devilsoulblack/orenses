@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>El Oro, Ecuador — Descubre sus tesoros</title>
+  <meta name="description" content="Guía turística de la provincia de El Oro (Ecuador). Playas, Bosque Petrificado de Puyango, Zaruma y Machala." />
+  <style>
+    * {box-sizing: border-box; margin:0; padding:0; font-family: Inter, Arial, sans-serif;}
+    body {line-height:1.5; color:#1f2937; background: linear-gradient(180deg,#f8fafc,#ffffff);}
+    .container {max-width:1100px; margin:32px auto; padding:24px;}
+    .hero {display:flex; gap:24px; align-items:center; background: linear-gradient(90deg, rgba(3,105,161,0.06), rgba(16,185,129,0.03)); border:1px solid rgba(15,23,42,0.04); border-radius:12px; padding:28px; box-shadow: 0 6px 24px rgba(15,23,42,0.04);}
+    .hero .text {flex:1;}
+    .hero h1 {font-size:clamp(24px,3.5vw,40px); margin-bottom:8px; color:#0f172a;}
+    .hero p {color:#334155; margin-bottom:16px;}
+    .btn {display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:600;}
+    .btn-primary {background:#0ea5a4; color:white;}
+    .btn-ghost {border:1px solid #cbd5e1; color:#0f172a; background:transparent;}
+    .hero .photo {width:320px; max-width:35%; border-radius:10px; overflow:hidden; flex-shrink:0;}
+    .hero .photo img {width:100%; height:100%; object-fit:cover;}
+    .grid {display:grid; grid-template-columns: repeat(2,1fr); gap:20px; margin-top:24px;}
+    @media (max-width:880px){ .grid{grid-template-columns:1fr;} .hero{flex-direction:column;} .hero .photo{max-width:100%; width:100%} }
+    .card {background:#fff; border-radius:10px; padding:18px; border:1px solid rgba(15,23,42,0.04); box-shadow: 0 6px 18px rgba(2,6,23,0.04);}
+    .card h3 {margin-bottom:8px; color:#0f172a;}
+    .card p {color:#475569; margin-bottom:12px;}
+    .card img {width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:10px;}
+    .cta {margin-top:28px; padding:20px; border-radius:12px; background: linear-gradient(90deg,#06b6d4, #0ea5a4); color:white; display:flex; align-items:center; justify-content:space-between; gap:12px;}
+    .cta p {margin:0; font-weight:600;}
+    .cta a {background:white; color:#065f46; padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:700;}
+    footer {margin-top:28px; color:#64748b; font-size:14px; text-align:center; padding:14px;}
+    .meta {font-size:13px; color:#94a3b8;}
+    iframe {border:0; width:100%; height:350px; border-radius:10px; margin-top:20px;}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <!-- Hero -->
+    <header class="hero">
+      <div class="text">
+        <h1>El Oro, Ecuador — Costa, Historia y Naturaleza</h1>
+        <p>Descubre playas, manglares, ciudades históricas y el sorprendente Bosque Petrificado de Puyango: una provincia llena de contrastes entre costa y sierra baja.</p>
+        <a class="btn btn-primary" href="#atractivos">Explorar atractivos</a>
+        <a class="btn btn-ghost" href="#mapa">Ver mapa</a>
+      </div>
+      <div class="photo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Machala_catedral.jpg" alt="Catedral de Machala, El Oro">
+      </div>
+    </header>
+
+    <!-- Atractivos -->
+    <section id="atractivos" style="margin-top:24px;">
+      <h2 style="font-size:20px; margin-bottom:12px; color:#0f172a;">Atractivos principales</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Zaruma_ecuador.jpg" alt="Zaruma - centro histórico">
+          <h3>Zaruma — La ciudad dorada</h3>
+          <p>Famosa por su historia minera y arquitectura colonial. Sus calles empedradas y cafés tradicionales hacen de Zaruma un destino cultural y gastronómico único.</p>
+        </article>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Bosque_Puyango.jpg" alt="Bosque Petrificado de Puyango">
+          <h3>Bosque Petrificado de Puyango</h3>
+          <p>Uno de los mayores yacimientos de madera petrificada del mundo, con fósiles de más de 100 millones de años. Ideal para senderismo y fotografía de naturaleza.</p>
+        </article>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Machala_catedral.jpg" alt="Machala - capital bananera">
+          <h3>Machala — Capital bananera</h3>
+          <p>Corazón comercial de El Oro. Conocida por sus plazas, mercados de frutas tropicales y como punto de partida hacia las playas e islas cercanas.</p>
+        </article>
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Jambel%C3%AD_Ecuador.jpg" alt="Playa de Jambelí">
+          <h3>Playas e islas</h3>
+          <p>La isla Jambelí y los manglares ofrecen paisajes marinos, mariscos frescos y avistamiento de aves. Perfecto para relajarse y conectar con la naturaleza.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section id="mapa">
+      <h2 style="margin-top:28px; font-size:20px; color:#0f172a;">Ubicación en el mapa</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m2!1m1!1sEl+Oro,+Ecuador" allowfullscreen loading="lazy"></iframe>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div>
+        <p>¿Listo para planear tu viaje a El Oro?</p>
+        <small class="meta">Explora playas, pueblos y naturaleza en un solo destino.</small>
+      </div>
+      <div>
+        <a href="#contacto">Solicitar guía</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Landing page turística de la provincia de El Oro, Ecuador.</p>
+      <p class="meta">Imágenes: Wikimedia Commons (CC-BY-SA)</p>
+    </footer>
+  </main>
+</body>
+</html>
